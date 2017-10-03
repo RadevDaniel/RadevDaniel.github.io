@@ -1,0 +1,484 @@
+﻿<!DOCTYPE html>
+<html>
+<title>CV - Daniel Radev</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="styles/Style.css">
+<link rel="stylesheet" href="styles/slider.css">
+<link rel="stylesheet" type="text/css" href="styles/demo.css" />
+<link rel="stylesheet" type="text/css" href="styles/ns-default.css" />
+<link rel="stylesheet" type="text/css" href="styles/ns-style-other.css"/>
+<link rel="stylesheet" href="styles/form-style.css">
+<link rel="stylesheet" href="styles/repos.css">
+<link rel="stylesheet" href="styles/cv-media-queries.css">
+<script src="scripts/jquery-3.2.1.min.js"></script>
+<script src="scripts/modernizr.custom.js"></script>
+<script src="scripts/snap.svg-min.js"></script><script src="scripts/application.js"></script>
+<script src="scripts/contact-form.js"></script>
+<script src="scripts/requests.js"></script>
+
+<body class="w3-light-gray">
+<!-- BackGroundVideo -->
+<video id="my-video" class="video" muted loop>
+    <source src="media/3.mp4" type="video/mp4">
+</video>
+<!-- VideoEND -->
+<!-- Notification-->
+<div class="notification-shape shape-box" id="notification-shape" data-path-to="m 0,0 500,0 0,500 -500,0 z">
+
+</div>
+<!--End Notification-->
+<!--CONTACT FORM -->
+<section class="form-container">
+    <h1 class="contact-me">Contact Me <span class="close-form">X</span></h1>
+    <form method="POST">
+        <article class="field name-box" value="name">
+            <input class="input" type="text" name="name" id="name" placeholder="Who Are You?"/>
+            <div class="name"><p class="message">Name</p></div>
+        </article>
+
+        <article class="field email-box" value="email">
+            <input class="input" type="text" name="email" id="email" placeholder="name@email.com"/>
+            <div class="email"><p class="message">Email</p></div>
+        </article>
+
+        <article class="field msg-box" value="message">
+            <div class="msg"><p class="message">Message</p></div>
+            <textarea id="msg"  name="message" placeholder="Your message goes here..."/></textarea>
+        </article>
+
+        <input class="button-submit input" type="submit" value="Send" />
+    </form>
+</section>
+<!-- Page Container -->
+<div class="w3-content w3-margin-top content-main" style="max-width:1400px;">
+
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+        <!-- Left Column -->
+        <div class="w3-third">
+
+            <div class="w3-white w3-text-grey w3-card-4">
+
+                <div class="querie-container-first">
+                    <div class="w3-display-container">
+                        <div class="grid">
+                            <figure class="effect-winston">
+                                <img src="img/WP_20160528_15_54_25_Pro.jpg" alt="img30"/>
+                                <figcaption>
+                                    <h2>Daniel <span>Radev</span></h2>
+                                    <p>
+                                        <a href="#"><i class="fa fa-fw fa-star-o"></i></a>
+                                        <a href="#"><i class="fa fa-fw fa-comments-o"></i></a>
+                                        <a href="#"><i class="fa fa-fw fa-envelope-o send-email"></i></a>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <p><i class="fa fa-hand-spock-o fa-fw w3-margin-right w3-large"></i>Bulgarian</p>
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large "></i>Front-End Engineer</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large"></i>Sofia, Bulgaria, Suhodolska 175</p>
+                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large"></i>d.radevs@abv.bg</p>
+                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large"></i>+359 876 72 06 46</p>
+                        <p>
+                            <i class="fa fa-globe fa-fw w3-margin-right w3-large"></i>
+                            <a href="https://df9950.wixsite.com/danielradev" target="_blank">DanielRadev</a>
+                        </p>
+                        <p><i class="fa fa-drivers-license fa-fw w3-margin-right w3-large"></i>11/03/1996</p>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="w3-container">
+                    <button class="btn btn-5 btn-5a icon-cart "><span>Download pdf</span></button>
+                    <hr>
+                    <div class="tabs">
+                        <p class="w3-xlarge"><b><i class="fa fa-asterisk fa-fw w3-margin-right"></i>Skills</b></p>
+
+                        <div class="tab">
+                        <input id="tab-one" type="checkbox" name="tabOne" >
+                        <label for="tab-one" class="labels cl-effect-16"><i class="fa fa-laptop font" aria-hidden="true"></i><a data-hover="Computer Languages" class="dropLink">Computer Languages</a></label>
+
+                        <div class="tab-content" id="tabOne">
+
+                            <div class="indicate">
+
+                                <p>HTML5</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="html"></div>
+                                    </div>
+                                </div>
+
+                                <p>JavaScript</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="js"></div>
+                                    </div>
+                                </div>
+
+                                <p>C#</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="csh"></div>
+                                    </div>
+                                </div>
+
+                                <p>C++</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="cpp"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="tab">
+                        <input id="tab-two" type="checkbox" name="tabTwo">
+                        <label for="tab-two" class="labels cl-effect-16"><i class="fa fa-tasks font" aria-hidden="true"></i><a data-hover="IDEs" class="dropLink">IDEs</a></label>
+
+                        <div class="tab-content" id="tabTwo">
+                            <div class="indicate">
+
+                                <p>WebStorm</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="ws"></div>
+                                    </div>
+                                </div>
+
+                                <p>VisualStudio</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="vs"></div>
+                                    </div>
+                                </div>
+
+                                <p>DreamWeaver</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="dw"></div>
+                                    </div>
+                                </div>
+
+                                <p>SublimeText</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="st"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="tab">
+                        <input id="tab-three" type="checkbox" name="tabThree">
+                        <label for="tab-three" class="labels cl-effect-16"><i class="fa fa-file-image-o font" aria-hidden="true"></i><a data-hover=" Graphic Softwares" class="dropLink">Graphic Softwares</a></label>
+
+                        <div class="tab-content" id="tabThree">
+                            <div class="indicate">
+
+                                <p>Adobe Photoshop</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="aps"></div>
+                                    </div>
+                                </div>
+
+                                <p>Adobe Illustrator</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="ail"></div>
+                                    </div>
+                                </div>
+
+                                <p>Adobe Indesign</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="ain"></div>
+                                    </div>
+                                </div>
+
+                                <p>Corel Draw</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="cdw"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="tab">
+                        <input id="tab-four" type="checkbox" name="tabFour">
+                        <label for="tab-four" class="labels cl-effect-16"><i class="fa fa-line-chart font" aria-hidden="true"></i><a data-hover="Business Softwares" class="dropLink">Business Softwares</a></label>
+
+                        <div class="tab-content" id="tabFour">
+                            <div class="indicate">
+
+                                <p>Microsoft Office</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="mo">95%</div>
+                                    </div>
+                                </div>
+
+                                <p>Microinvest Delta Pro</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="mdp">80%</div>
+                                    </div>
+                                </div>
+
+                                <p>Microinvest TRZ Pro</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="mtrz">80%</div>
+                                    </div>
+                                </div>
+
+                                <p>Meta Trader</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="mtrd">85%</div>
+                                    </div>
+                                </div>
+
+                                <p>Trader Bg Platform</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="trdbg">95%</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="tab">
+                        <input id="tab-five" type="checkbox" name="tabFive">
+                        <label for="tab-five" class="labels cl-effect-16"><i class="fa fa-file-video-o font" aria-hidden="true"></i><a data-hover="Video Softwares" class="dropLink">Video Softwares</a></label>
+
+                        <div class="tab-content" id="tabFive">
+                            <div class="indicate">
+
+                                <p>Adobe Premiere</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="apmr"></div>
+                                    </div>
+                                </div>
+
+                                <p>Adobe After Effects</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="aae"></div>
+                                    </div>
+                                </div>
+
+                                <p>Sony Vegas</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="sove"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="tab">
+                        <input id="tab-six" type="checkbox" name="tabSix">
+                        <label for="tab-six" class="labels cl-effect-16"><i class="fa fa-file-audio-o" aria-hidden="true"></i><a data-hover="Audio Softwares" class="dropLink">Audio Softwares</a></label>
+
+                        <div class="tab-content" id="tabSix">
+                            <div class="indicate">
+
+                                <p>FL Studio</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="fl"></div>
+                                    </div>
+                                </div>
+
+                                <p>Cubase</p>
+                                <div class="w3-progress-container w3-round-xlarge w3-small" style="background-color: #c9cdc5">
+                                    <div class="w3-progressbar w3-round-xlarge">
+                                        <div class="w3-center w3-text-white" id="cu"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <br>
+                    <div class="querie-container-second">
+                        <p class="w3-xlarge w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text"></i>Languages</b></p>
+
+                        <p>Bulgarian</p>
+                        <div class="w3-progress-container w3-round-xlarge" style="background-color: #c9cdc5">
+                            <div class="w3-progressbar w3-round-xlarge" style="width:95%"></div>
+                        </div>
+
+                        <p>English</p>
+                        <div class="w3-progress-container w3-round-xlarge" style="background-color: #c9cdc5">
+                            <div class="w3-progressbar w3-round-xlarge" style="width:80%"></div>
+                        </div>
+
+                        <p>Russian</p>
+                        <div class="w3-progress-container w3-round-xlarge" style="background-color: #c9cdc5">
+                            <div class="w3-progressbar w3-round-xlarge" style="width:20%"></div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <div class="w3-white w3-text-grey w3-card-4 repositories">
+                <div class="w3-container">
+                    <p class="w3-xlarge w3-text-theme">
+                        <b><i class="fa fa-certificate fa-fw w3-margin-right  w3-text"></i>Shorted Portfolio</b>
+                    </p>
+                    <div class="main-content-repos">
+
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+
+            <!-- End Left Column -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="w3-twothird">
+
+            <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+                <h2 class="w3-text-grey w3-padding-16"><i
+                        class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text"></i>Education</h2>
+
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>PGI "Georgi Stoikov Rakovski"</b></h5>
+                    <h6 class="w3-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011 - 2016</h6>
+
+                    <p>Master Degree - <span class="w3-tag w3-round">economic informatics</span></p><br>
+                    <hr>
+                    <h5>Acquired Professional Qualifications</h5>
+
+                    <p class="w3-text-grey"> - Creating vector and raster graphics.</p>
+
+                    <p class="w3-text-grey"> - Creating web design.</p>
+
+                    <p class="w3-text-grey"> - Programming with C++ and C#.</p>
+
+                    <p class="w3-text-grey"> - Working with MicroInvest, Adobe and Microsoft products.</p>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Software University</b></h5>
+                    <h6 class="w3-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - 2018</h6>
+
+                    <p>Bachelor Degree - <span class="w3-tag w3-round">Full Stack JS Engineering</span> - <span class="w3-tag w3-round">in progress</span></p>
+                    <hr>
+                </div>
+            </div>
+            <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+                <h2 class="w3-text-gray w3-padding-16"><i
+                        class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text"></i>Personal Skills and
+                    Competencies</h2>
+
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Communication Skills</b></h5>
+
+                    <p>- Excellent communication skills due on previous experience as a Waiter.</p>
+
+                    <p>- Taking prompt and appropriate decisions due on previous experience as a Quality Control.(EFES
+                        s.r.o.)</p>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Computer Skills</b></h5>
+
+                    <p>- Proficiency in Adobe products.</p>
+
+                    <p>- Proficiency in Microsoft products.</p>
+
+                    <p>- Proficiency in MicroInvest products.</p>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Other Skills and Competencies</b></h5>
+
+                    <p>- Computer Technician.</p>
+
+                    <p>- Work with documents.</p>
+
+                    <p>- Trading.</p>
+
+                    <p>- Work with audio software.</p>
+                    <hr>
+                </div>
+
+            </div>
+            <div class="w3-container w3-card-2 w3-white">
+                <h2 class="w3-text-gray w3-padding-16"><i
+                        class="fa fa-file fa-fw w3-margin-right w3-xxlarge w3-text"></i>Application</h2>
+
+                <div class="w3-display-container">
+                    <div class="slideshow">
+                        <input type="radio" id="one" name="control">
+                        <input type="radio" id="two" name="control">
+                        <input type="radio" id="three" name="control">
+
+                        <div class="slides">
+                            <img src="img/Diploma.jpg" data-slide="one">
+                            <img src="img/js_applications_-_july_2017_-_certificate.jpg" data-slide="two">
+                            <img src="img/web_fundamentals_-_html5_-_january_2017_-_certific.jpg" data-slide="three">
+
+                        </div>
+
+                        <div class="events">
+                            <label for="one" class="label">Diploma</label>
+                            <label for="two" class="label">JavaScript</label>
+                            <label for="three" class="label">HTML5</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Right Column -->
+        </div>
+        <!-- Left Column -->
+
+        <!-- End Grid -->
+    </div>
+
+    <!-- End Page Container -->
+</div>
+
+
+<footer class="w3-container w3-center w3-margin-top w3-padding-bottom">
+    <p style="font-size:16px">Find me on social media.</p>
+    <i class="fa fa-facebook-official w3-hover-text-indigo" style="font-size:48px"></i>
+    <i class="fa fa-github-square w3-hover-text-purple" style="font-size:48px"></i>
+    <i class="fa fa-google-plus-square w3-hover-text-yellow" style="font-size:48px"></i>
+</footer>
+
+<script>
+    $(() => effects());
+    $(() => formSubmit());
+    $(() => contactFormDesign());
+</script>
+
+</body>
+</html>

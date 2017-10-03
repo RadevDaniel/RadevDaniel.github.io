@@ -1,0 +1,440 @@
+@font-face {
+    font-family: 'alabala';
+    src:url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/fontawesome-webfont.woff') format('woff'),
+    url('../fonts/fontawesome-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+}
+#html, #js{
+    transition: all 2s;
+}
+
+i{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #01414b !important;
+}
+footer{
+    background-color: #3085a3;
+    width: 100%;
+}
+footer i{
+    color: #01414b !important;
+}
+.video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -20;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+.hide{
+	background-color: azure;
+}
+.icons{
+    padding: 20px;
+}
+p{
+	line-height: 13px;
+}
+.w3-round{
+	padding: 5px;
+}
+.w3-small{
+    margin-bottom: 30px;
+}
+.w3-progressbar{
+    background-color: #01414b !important;
+}
+.w3-tag{
+    background-color: #01414b !important;
+}
+.w3-row-padding{
+    opacity: 0.9;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.icons p i{
+	line-height: 5px;
+}
+.w3-light-gray{
+	margin: 0 auto;
+}
+.w3-third{
+    width: 37%;
+    min-width: 350px;
+}
+.w3-twothird{
+    width: 70%;
+    float: right !important;
+}
+.content-main{
+    position: relative;
+}
+/******************************************************************
+                            REPO BOXES
+********************************************************************/
+.content-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 1px;
+    margin: 5px 0;
+}
+.number{
+    border: solid 1px #01414b;
+    background-color: #dfe3db;
+    flex-basis: 20%;
+    min-width: 70px;
+    height: 70px;
+    margin-right: 5px;
+    float: left;
+}
+.repo-content{
+    border: solid 1px #01414b;
+    background-color: #dfe3db;
+    flex-basis: 80%;
+    height: 70px;
+    float: right;
+}
+
+
+/******************************************************************
+                            ACCORDION MENU
+********************************************************************/
+.half {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+/* Acordeon styles */
+.tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+}
+.tab i{
+    width: 30px;
+    margin: 0;
+}
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.labels {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    background: #3085a3;
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.labels:hover{
+    background-color: #3085a3;
+}
+.tab-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #f1f1f1;
+}
+.indicate{
+   padding: 20px 20px 30px 20px;
+}
+.indicate p{
+    color: #6e6e6e;
+}
+.tab-content p {
+
+}
+.font{
+    margin-right: 15px;
+}
+/* Icon */
+.labels::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    transition: .3s ease-in;
+}
+input[type=checkbox] + .labels::after {
+    content: "+";
+}
+input[type=checkbox]:checked + .labels::after {
+    transform: rotate(315deg);
+    transition: transform 1s;
+}
+
+/******************************************************************
+                            LINK BUTTON EFFECTS
+********************************************************************/
+.cl-effect-16 a::before {
+    color: #fff;
+    content: attr(data-hover);
+    position: absolute;
+    opacity: 0;
+    text-shadow: 0 0 1px rgba(100,100,100,0.3);
+    transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+    transition: transform 0.3s, opacity 0.3s;
+    pointer-events: none;
+}
+
+.cl-effect-16 a:hover::before,
+.cl-effect-16 a:focus::before {
+    transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+    opacity: 1;
+}
+
+.dropLink{
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 25px 0;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    transition: all .6s;
+}
+
+
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+    font-family: 'alabala';
+    line-height: 1;
+    position: relative;
+    top: 5px;
+}
+.icon-cart:before {
+    content: "\f019";
+    position: relative;
+    top: 5px;
+}
+
+/* Button 5 */
+.btn-5 {
+    background: #3085a3;
+    color: #fff;
+    height: 70px;
+    min-width: 20px;
+    width: 100%;
+    line-height: 24px;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.btn-5 span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: all .6s;
+}
+
+.btn-5:before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 2.5;
+    font-size: 180%;
+    transition: all .2s ease-out;
+    transition-delay: .1s;
+}
+
+/* Button 5a */
+.btn-5a:hover span {
+    transform: translateY(300%);
+}
+
+.btn-5a:before {
+    left: 0;
+    top: -100%;
+}
+
+.btn-5a:hover:before {
+    top: 0;
+}
+/******************************************************************
+                           Avatar
+********************************************************************/
+
+/* Common style */
+.grid figure {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0;
+    width: 100%;
+    height: auto;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid figure img {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+}
+
+.grid figure figcaption {
+    padding-left: 1em;
+    padding-top: 13em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    backface-visibility: hidden;
+}
+
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 1;
+}
+
+.grid figure h2 {
+    text-shadow: 3px 1px 5px #555;
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+
+
+
+
+figure.effect-winston {
+    background: #162633;
+    text-align: left;
+}
+
+figure.effect-winston img {
+    transition: opacity 0.45s;
+    backface-visibility: hidden;
+}
+
+figure.effect-winston figcaption::before {
+    position: absolute;
+    top: 50px;
+    left: -25px;
+    width: 100%;
+    height: 100%;
+    background: url(../img/triangle.svg) no-repeat;
+    background-size: 100% 100%;
+    content: '';
+    transition: opacity 0.45s, transform 0.45s;
+    transform: rotate3d(0,0,1,40deg);
+    transform-origin: 0 100%;
+}
+
+figure.effect-winston h2 {
+    transition: transform 0.35s;
+    transform: translate3d(0,60px,0);
+}
+
+figure.effect-winston p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0 1.5em 7% 0;
+}
+
+figure.effect-winston a {
+    margin: 0 10px;
+    color: #5d504f;
+    font-size: 170%;
+}
+
+figure.effect-winston a:hover,
+figure.effect-winston a:focus {
+    color: #cc6055;
+}
+
+figure.effect-winston p a i {
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(0,50px,0);
+}
+
+figure.effect-winston:hover img {
+    opacity: 0.6;
+}
+
+figure.effect-winston:hover h2 {
+    transform: translate3d(0,0,0);
+}
+
+figure.effect-winston:hover figcaption::before {
+    opacity: 0.7;
+    transform: rotate3d(0,0,1,15deg);
+}
+
+figure.effect-winston:hover p i {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+figure.effect-winston:hover p a:nth-child(3) i {
+    transition-delay: 0.05s;
+}
+
+figure.effect-winston:hover p a:nth-child(2) i {
+    transition-delay: 0.1s;
+}
+
+figure.effect-winston:hover p a:first-child i {
+    transition-delay: 0.15s;
+}

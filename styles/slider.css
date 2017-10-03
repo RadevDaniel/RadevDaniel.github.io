@@ -1,0 +1,136 @@
+
+
+/* define slideshow and slides */
+.slideshow { overflow: hidden; }
+input[name="control"] {
+    position: absolute;
+    left: -9999px;
+}
+.slides:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+[data-slide] {
+    float: left;
+    width: 100%;
+    display: block;
+}
+
+[data-slide]:nth-child(n+2) {
+    margin-left: -100%;
+    animation: slideOut 1s;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* define event buttons */
+.events {
+    padding-top: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.label {
+    flex-direction: row;
+    border: 0;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #f1f1f1;
+    background: #3085a3;
+    cursor: pointer;
+    transition: all .6s;
+    outline: 0;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.label:hover {
+    background: #01414b;
+}
+label[for=one]{
+    margin-right: 3px;
+}
+label[for=two]{
+    margin-right: 3px;
+}
+
+
+/* animate slides */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+#one:checked ~ .slides [data-slide="one"] {
+    animation: slideIn 1s;
+    transform: translateX(0);
+}
+#two:checked ~ .slides [data-slide="two"] {
+    transition: none;
+    opacity: 1;
+    animation: slideIn 1s;
+    transform: translateX(0);
+}
+
+#three:checked ~ .slides [data-slide="three"] {
+    transition: none;
+    opacity: 1;
+    animation: slideIn 1s;
+    transform: translateX(0);
+}
+#four:checked ~ .slides [data-slide="four"] {
+    transition: none;
+    opacity: 1;
+    animation: slideIn 1s;
+    transform: translateX(0);
+}
+
+/* prevent first animations */
+#one:not(:checked) + #two:not(:checked) + #three:not(:checked) + #four:not(:checked) ~ .slides [data-slide] {
+    animation: none;
+    transition: none;
+}
+
+/* activate first button */
+input[name="control"]:checked ~ .slides [data-slide] {
+    animation: slideOut 1s;
+    transform: translateX(-100%);
+}
+
+/* hide, and replace first button on start */
+#one:not(:checked) + #two:not(:checked) + #three:not(:checked) + #four:not(:checked) ~ .events:before {
+    content: 'one';
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 1em;
+    text-align: center;
+    width: calc(24% - .3em);
+    margin: 0 .125em;
+    padding: .5em 0;
+    color: #666;
+    background: #ccc;
+    box-shadow: 0 4px 0 #999;
+    cursor: pointer;
+    transition: all 100ms ease-out;
+    outline: 0;
+    border-radius: .2em;
+}
+#one:not(:checked) + #two:not(:checked) + #three:not(:checked) + #four:not(:checked) ~ .events [for="one"] {
+    display: none;
+}

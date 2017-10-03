@@ -1,0 +1,99 @@
+@font-face {
+    src:url('../fonts/Lato-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.close-form{
+    transition: all .3s;
+    padding: 0 20px;
+    float: right;
+}
+.close-form:hover{
+    cursor: pointer;
+    box-shadow:  2px 2px 4px #01414b;
+}
+.form-container {
+    opacity: 0;/*SHOULD BE 0*/
+    z-index: 0; /*SHOULD BE ZERO*/
+    position: fixed;
+    margin: 0 auto;
+    background-image: url("../img/White-Transperant-6.png");
+    background-repeat: repeat;
+    text-align:center;
+    padding:50px 0 110px;
+    width:100%;
+    height: 100%;
+}
+article{
+    margin-bottom: -40px;
+}
+h1 {
+    opacity: 0;/*SHOULD BE 0*/
+    margin:0 auto 40px auto;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size:4em;
+    text-transform:uppercase;
+    max-width: 800px;
+}
+form{
+    opacity: 0;/*SHOULD BE 0*/
+    position: relative;
+    top: 250px; /*SHOULD BE 250*/
+    border-top: 15px solid #01414b;
+    padding-top: 120px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.input, textarea{
+    width: 100%;
+    max-width: 800px;
+    height: 50px;
+    box-sizing: border-box;
+}
+.input{
+    opacity: 1;
+    z-index: 0;
+    position: static;
+}
+.msg{
+    z-index: 10;
+    display: flex;
+    position: absolute;
+    background-color: #01414b;
+    color: lightgray;
+    text-transform: uppercase;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    transition: all .5s;
+}
+.email, .name{
+    display: flex;
+    position: relative;
+    background-color: #01414b;
+    color: lightgray;
+    text-transform: uppercase;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    bottom: 50px;
+    transition: all .5s;
+}
+#msg, #email, #name{
+    padding-left: 21%;
+}
+.message{
+    flex-grow: 1;
+}
+.button-submit{
+    max-width: 200px;
+    border: none;
+    color: lightgray;
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    cursor: pointer;
+    background-color: #01414b;
+}
