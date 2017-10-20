@@ -5,7 +5,7 @@
 }
 .close-form{
     transition: all .3s;
-    padding: 0 20px;
+    padding: 0 30px;
     float: right;
 }
 .close-form:hover{
@@ -16,13 +16,15 @@
     opacity: 0;/*SHOULD BE 0*/
     z-index: 0; /*SHOULD BE ZERO*/
     position: fixed;
+    top: 0;
     margin: 0 auto;
     background-image: url("../img/White-Transperant-6.png");
     background-repeat: repeat;
     text-align:center;
-    padding:50px 0 110px;
+    padding:50px 16px 110px 16px;
     width:100%;
     height: 100%;
+    display: none;
 }
 article{
     margin-bottom: -40px;

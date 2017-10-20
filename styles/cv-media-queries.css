@@ -21,6 +21,9 @@
     figure.effect-winston figcaption::before{
         top: 70px;
     }
+    .events{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 500px) {

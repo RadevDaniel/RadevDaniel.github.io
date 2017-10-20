@@ -72,9 +72,9 @@
                                 <figcaption>
                                     <h2>Daniel <span>Radev</span></h2>
                                     <p>
-                                        <a href="#"><i class="fa fa-fw fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-fw fa-comments-o"></i></a>
-                                        <a href="#"><i class="fa fa-fw fa-envelope-o send-email"></i></a>
+                                        <a href="https://www.facebook.com/dradev.dakata" target="_blank"><i class="fa fa-fw fa-facebook-square fav-avatar"></i></a>
+                                        <a href="https://github.com/RadevDaniel" target="_blank"><i class="fa fa-fw fa-github fav-avatar"></i></a>
+                                        <a href="#"><i class="fa fa-fw fa-envelope send-email fav-avatar"></i></a>
                                     </p>
                                 </figcaption>
                             </figure>
@@ -84,7 +84,7 @@
                         <p><i class="fa fa-hand-spock-o fa-fw w3-margin-right w3-large"></i>Bulgarian</p>
                         <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large "></i>Front-End Engineer</p>
                         <p><i class="fa fa-home fa-fw w3-margin-right w3-large"></i>Sofia, Bulgaria, Suhodolska 175</p>
-                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large"></i>d.radevs@abv.bg</p>
+                        <p class="poster-email"><i class="fa fa-envelope fa-fw w3-margin-right w3-large"></i><span>d.radevs@abv.bg</span></p>
                         <p><i class="fa fa-phone fa-fw w3-margin-right w3-large"></i>+359 876 72 06 46</p>
                         <p>
                             <i class="fa fa-globe fa-fw w3-margin-right w3-large"></i>
@@ -102,10 +102,10 @@
                         <p class="w3-xlarge"><b><i class="fa fa-asterisk fa-fw w3-margin-right"></i>Skills</b></p>
 
                         <div class="tab">
-                        <input id="tab-one" type="checkbox" name="tabOne" >
-                        <label for="tab-one" class="labels cl-effect-16"><i class="fa fa-laptop font" aria-hidden="true"></i><a data-hover="Computer Languages" class="dropLink">Computer Languages</a></label>
+                            <input id="tab-one" type="checkbox" name="tabOne" >
+                            <label for="tab-one" class="labels cl-effect-16"><i class="fa fa-laptop font" aria-hidden="true"></i><a data-hover="Computer Languages" class="dropLink">Computer Languages</a></label>
 
-                        <div class="tab-content" id="tabOne">
+                            <div class="tab-content" id="tabOne">
 
                             <div class="indicate">
 
@@ -139,7 +139,7 @@
 
                             </div>
                         </div>
-                    </div>
+                        </div>
 
                         <div class="tab">
                         <input id="tab-two" type="checkbox" name="tabTwo">
@@ -365,6 +365,10 @@
         <div class="w3-twothird">
 
             <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+                <h2 class="w3-text-grey w3-padding-16">
+                    <i class="fa fa-male fa-fw w3-margin-right w3-xxlarge w3-text"></i>About Me</h2>
+            </div>
+            <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
                 <h2 class="w3-text-grey w3-padding-16"><i
                         class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text"></i>Education</h2>
 
@@ -442,9 +446,9 @@
                         <input type="radio" id="three" name="control">
 
                         <div class="slides">
-                            <img src="img/Diploma.jpg" data-slide="one">
-                            <img src="img/js_applications_-_july_2017_-_certificate.jpg" data-slide="two">
-                            <img src="img/web_fundamentals_-_html5_-_january_2017_-_certific.jpg" data-slide="three">
+                            <a href="img/Diploma.jpg" target="_blank" data-slide="one"><img src="img/Diploma.jpg" data-slide="one"></a>
+                            <a href="img/js_applications_-_july_2017_-_certificate.jpg" target="_blank" data-slide="two"><img src="img/js_applications_-_july_2017_-_certificate.jpg" data-slide="two"></a>
+                            <a href="img/web_fundamentals_-_html5_-_january_2017_-_certific.jpg" target="_blank" data-slide="three"><img src="img/web_fundamentals_-_html5_-_january_2017_-_certific.jpg" data-slide="three"></a>
 
                         </div>
 
@@ -458,8 +462,6 @@
             </div>
             <!-- End Right Column -->
         </div>
-        <!-- Left Column -->
-
         <!-- End Grid -->
     </div>
 
@@ -467,11 +469,21 @@
 </div>
 
 
-<footer class="w3-container w3-center w3-margin-top w3-padding-bottom">
-    <p style="font-size:16px">Find me on social media.</p>
-    <i class="fa fa-facebook-official w3-hover-text-indigo" style="font-size:48px"></i>
-    <i class="fa fa-github-square w3-hover-text-purple" style="font-size:48px"></i>
-    <i class="fa fa-google-plus-square w3-hover-text-yellow" style="font-size:48px"></i>
+<footer class="w3-container footer">
+    <section class="top-part-footer">
+        <a href="https://www.facebook.com/dradev.dakata" target="_blank">
+            <article class="footer-icon"><img src="img/facebook.png" width="30px" height="25px"></article>
+        </a>
+            <div class="hrz-line"></div>
+        <a href="https://github.com/RadevDaniel" target="_blank">
+            <article class="footer-icon"><img src="img/github.png" width="30px" height="25px"></article>
+        </a>
+            <div class="hrz-line"></div>
+        <article class="footer-icon" id="footer-email"><img src="img/@.png" width="30px" height="25px"></article>
+    </section>
+    <section class="bottom-part-footer">
+        <p>&copy; All Rights Reserved 2017 | Proudly created by Daniel Radev.</p>
+    </section>
 </footer>
 
 <script>

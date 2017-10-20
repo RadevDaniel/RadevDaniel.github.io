@@ -19,11 +19,56 @@ i{
     color: #01414b !important;
 }
 footer{
-    background-color: #3085a3;
     width: 100%;
+    text-align: center;
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0 !important;
 }
-footer i{
-    color: #01414b !important;
+.top-part-footer{
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    background-color: #01414b;
+    padding: 0 20px;
+}
+.bottom-part-footer{
+    width: 100% !important;
+    flex-basis: 100%;
+    flex-grow: 1;
+    background-color: #3085a3;
+}
+.bottom-part-footer p{
+    padding: 15px;
+    font-size:14px;
+    color: #01414b;
+}
+.footer-icon{
+    width: 50px;
+    height: 50px;
+    border: solid 1px #3085a3;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding-top: 11px;
+    transition: all .3s;
+    margin-bottom: 0 !important;
+}
+.footer-icon:hover{
+    width: 60px;
+    height: 60px;
+    padding-top: 16px;
+}
+.hrz-line{
+    width: 20%;
+    height: 1px;
+    margin: 0px 10px 0 10px;
+    border-top: 1px solid #3085a3 !important;
 }
 .video {
     position: fixed;
@@ -78,6 +123,12 @@ p{
 }
 .content-main{
     position: relative;
+}
+.poster-email:hover{
+    cursor: pointer;
+}
+.poster-email span{
+    text-decoration: underline;
 }
 /******************************************************************
                             REPO BOXES
@@ -142,7 +193,7 @@ input {
     transition: background-color 0.3s;
 }
 .labels:hover{
-    background-color: #3085a3;
+    background-color: #36a0bf;
 }
 .tab-content {
     max-height: 0;
@@ -331,7 +382,12 @@ input[type=checkbox]:checked + .labels::after {
     font-size: 0;
     opacity: 1;
 }
-
+.fav-avatar{
+    transition: all .3s !important;
+}
+.fav-avatar:hover{
+    color: #01a4b9 !important;
+}
 .grid figure h2 {
     text-shadow: 3px 1px 5px #555;
     word-spacing: -0.15em;
@@ -351,13 +407,7 @@ input[type=checkbox]:checked + .labels::after {
     letter-spacing: 1px;
     font-size: 68.5%;
 }
-
-
-
-
-
 figure.effect-winston {
-    background: #162633;
     text-align: left;
 }
 
@@ -393,14 +443,7 @@ figure.effect-winston p {
 }
 
 figure.effect-winston a {
-    margin: 0 10px;
-    color: #5d504f;
     font-size: 170%;
-}
-
-figure.effect-winston a:hover,
-figure.effect-winston a:focus {
-    color: #cc6055;
 }
 
 figure.effect-winston p a i {

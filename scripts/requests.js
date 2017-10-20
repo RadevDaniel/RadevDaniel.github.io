@@ -107,7 +107,7 @@ function formSubmit(){
             success: displayRepos,
             error: displayError
         };
-       $.ajax(request);
+       //$.ajax(request);
 
         function displayRepos(repos){
             let basicContent = $('.main-content-repos');

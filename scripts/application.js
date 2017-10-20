@@ -9,6 +9,8 @@ function effects() {
     $('#tab-five').click(showView);
     $('#tab-six').click(showView);
     $('.send-email').click(viewEmailForm);
+    $('#footer-email').click(viewEmailForm);
+    $('.poster-email').click(viewEmailForm);
     $('.close-form').click(closeEmailForm);
 
 
@@ -114,9 +116,8 @@ function effects() {
     let formContainer = $('.form-container');
     let formHeader = $('form > h1');
     let form = $('form');
-
     function viewEmailForm(){
-            formContainer.css({'z-index': '10'}, 1000, 'linear');
+            formContainer.css({'display':'block', 'z-index': '10'}, 1000, 'linear');
             formContainer.animate({'opacity': '1'}, 1000, 'linear');
             formHeader.animate({'opacity': '1'}, 1000, 'linear');
             setTimeout(function () {
@@ -132,7 +133,7 @@ function effects() {
         setTimeout(function () {
             formContainer.animate({'opacity': '0'}, 1000, 'linear');
             formHeader.animate({'opacity': '0'}, 1000, 'linear');
-            formContainer.css({'z-index': '0'}, 1000, 'linear');
+            formContainer.css({'display':'none', 'z-index': '0'}, 1000, 'linear');
         }, 300);
         $('.w3-third').css('min-width', '350px');
     }
@@ -141,7 +142,7 @@ function effects() {
         let video = document.getElementById("my-video");
 
         video.addEventListener( "canplay", function() {
-            video.play();
+            //video.play();
         });
     })();
 }
