@@ -7,14 +7,19 @@
     transition: all .3s;
     padding: 0 30px;
     float: right;
+    color: #f4f4f4;
+    z-index: 12;
 }
 .close-form:hover{
     cursor: pointer;
     box-shadow:  2px 2px 4px #01414b;
 }
+.contact-me{
+    z-index: 2000;
+}
 .form-container {
     opacity: 0;/*SHOULD BE 0*/
-    z-index: 0; /*SHOULD BE ZERO*/
+    z-index: 2000 !important; /*SHOULD BE ZERO*/
     position: fixed;
     top: 0;
     margin: 0 auto;
@@ -36,6 +41,7 @@ h1 {
     font-size:4em;
     text-transform:uppercase;
     max-width: 800px;
+    color: #f4f4f4;
 }
 form{
     opacity: 0;/*SHOULD BE 0*/

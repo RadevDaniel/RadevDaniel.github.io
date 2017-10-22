@@ -67,8 +67,9 @@ footer{
 .hrz-line{
     width: 20%;
     height: 1px;
-    margin: 0px 10px 0 10px;
+    margin: 0 10px 0 10px;
     border-top: 1px solid #3085a3 !important;
+    transition: all .3s;
 }
 .video {
     position: fixed;
@@ -129,6 +130,13 @@ p{
 }
 .poster-email span{
     text-decoration: underline;
+}
+.red-motto{
+    color: #631522;
+}
+
+.personality{
+    line-height: 18px;
 }
 /******************************************************************
                             REPO BOXES

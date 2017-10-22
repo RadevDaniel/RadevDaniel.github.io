@@ -2,6 +2,10 @@
     p{
         line-height: 20px;
     }
+    .w3-tag{
+        line-height: 13px !important;
+        margin-bottom: 5px;
+    }
 }
 @media screen and (max-width: 800px) {
     .w3-row-padding{
@@ -9,6 +13,7 @@
     }
     .w3-third{
         width: 100%;
+        min-width: 0;
     }
     .w3-twothird{
         width: 100%;
