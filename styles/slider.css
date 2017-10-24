@@ -121,7 +121,7 @@ input[name="control"]:checked ~ .slides [data-slide] {
     font-size: 1em;
     text-align: center;
     width: calc(24% - .3em);
-    margin: 0 .125em;
+
     padding: .5em 0;
     color: #666;
     background: #ccc;
