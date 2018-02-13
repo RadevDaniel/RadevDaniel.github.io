@@ -47,8 +47,8 @@ form{
     opacity: 0;/*SHOULD BE 0*/
     position: relative;
     top: 250px; /*SHOULD BE 250*/
-    border-top: 15px solid #01414b;
-    padding-top: 120px;
+    border-top: 10px solid #01414b;
+    padding-top: 80px;
     max-width: 800px;
     margin: 0 auto;
 }

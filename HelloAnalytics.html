@@ -22,6 +22,7 @@
 
 
     function authorize(event) {
+        console.log(event);
         // Handles the authorization flow.
         // `immediate` should be false when invoked from the button click.
         var useImmdiate = event ? false : true;
@@ -32,8 +33,10 @@
         };
 
         gapi.auth.authorize(authData, function(response) {
+            console.log(response);
             var authButton = document.getElementById('auth-button');
             if (response.error) {
+                console.log(response.error)
                 authButton.hidden = false;
             }
             else {

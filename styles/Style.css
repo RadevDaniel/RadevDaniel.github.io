@@ -60,9 +60,11 @@ footer{
     margin-bottom: 0 !important;
 }
 .footer-icon:hover{
-    width: 60px;
-    height: 60px;
-    padding-top: 16px;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .hrz-line{
     width: 20%;

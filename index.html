@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/Style.css">
-    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/slider-styles.css">
     <link rel="stylesheet" type="text/css" href="styles/demo.css" />
     <link rel="stylesheet" type="text/css" href="styles/ns-default.css" />
     <link rel="stylesheet" type="text/css" href="styles/ns-style-other.css"/>
@@ -36,6 +36,7 @@
     <script src="scripts/snap.svg-min.js"></script><script src="scripts/application.js"></script>
     <script src="scripts/contact-form.js"></script>
     <script src="scripts/requests.js"></script>
+    <script src="scripts/slider.js"></script>
 </head>
 
 
@@ -101,9 +102,9 @@
                     <div class="icons">
                         <p><i class="fa fa-hand-spock-o fa-fw w3-margin-right w3-large"></i>Bulgarian</p>
                         <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large "></i>Front-End Engineer</p>
-                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large"></i>Sofia, Bulgaria, Suhodolska 175</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large"></i>Prague, Czech Republic, Vondroušova 1217</p>
                         <p class="poster-email"><i class="fa fa-envelope fa-fw w3-margin-right w3-large"></i><span>d.radevs@abv.bg</span></p>
-                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large"></i>+359 876 72 06 46</p>
+                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large"></i>+420 721 766 623</p>
                         <p>
                             <i class="fa fa-globe fa-fw w3-margin-right w3-large"></i>
                             <a href="https://radevsorg.github.io/Radevs/" target="_blank">DanielRadev</a>
@@ -389,17 +390,17 @@
                     <i class="fa fa-male fa-fw w3-margin-right w3-xxlarge w3-text"></i>About Me</h2>
                 <div class="w3-container">
                     <h5 class="w3-opacity"><b>Daniel Radostinov Radev</b></h5>
-                    <h6 class="w3-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>11/03/1996 - Forever</h6>
+                    <h6 class="w3-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>11/03/1996</h6>
 
-                    <p>Position - <span class="w3-tag w3-round">Front-end Engineer</span></p>
+                    <p>Position - <span class="w3-tag w3-round">Front-End Engineer</span></p>
                     <hr>
                     <h5>Personality</h5>
-                    <p class="personality">Hello, as you already know I'm Daniel, 21 year old boy.
+                    <p class="personality">Hello, as you already know I am Daniel, 21 years old.
                         My interests in programing came since I was seventeen, when for the first time i touched a compiler.
-                        I like programing because this gives life in these boring calculating machines and I'd like to devote my life to this.
-                        In my free time I'm very active Person. I like to visit mountains, or landmarks.
-                        My favorite hobby is composing music, because that thing makes me feel free and it affects me to believe
-                        that everything is possible. My motto is: <b class="red-motto">"Once you stop learning you start dying"</b> and <b class="red-motto">"Be the designer of your live"</b>.
+                        I like programing because this gives life to these boring calculating machines and I'd like to devote my life to this.
+                        In my free time I am a very active Person. I like visiting mountains, or landmarks.
+                        My favorite hobby is composing music, because that thing makes me feel free and it makes me believe
+                        that everything is possible. My motto is: <b class="red-motto">"Once you stop learning you start dying"</b>.
                     </p>
                     <hr>
                 </div>
@@ -436,13 +437,24 @@
 
                     <p class="w3-text-grey"> - Creating web applications.</p>
 
-                    <p class="w3-text-grey"> - Front-end Development with JS (ECMAScript 6).</p>
+                    <p class="w3-text-grey"> - Front-end Development with JS (ECMAScript 2016).</p>
 
-                    <p class="w3-text-grey"> - Back-end Development with JS (ECMAScript 6).</p>
+                    <p class="w3-text-grey"> - Back-end Development with JS (ECMAScript 2016).</p>
 
                     <p class="w3-text-grey"> - Using libraries such as jQuery.</p>
 
                     <p class="w3-text-grey"> - Creating REST services and CRUD operations.</p>
+
+                    <hr style="max-width: 500px;">
+                    <h5 class="w3-text-blue-gray">Programing Languages</h5>
+
+                    <p class="w3-text-grey"> - C# (Basic)</p>
+
+                    <p class="w3-text-grey"> - JavaScript(ES 6)/Ajax/jQuery/etc..</p>
+
+                    <p class="w3-text-grey"> - TypeScript</p>
+
+                    <p class="w3-text-grey"> - HTML5/SCSS/LESS</p>
                     <hr>
                 </div>
             </div>
@@ -489,24 +501,21 @@
                         class="fa fa-file fa-fw w3-margin-right w3-xxlarge w3-text"></i>Application</h2>
 
                 <div class="w3-display-container">
-                    <div class="slideshow">
-                        <input type="radio" id="one" name="control">
-                        <input type="radio" id="two" name="control">
-                        <input type="radio" id="three" name="control">
+                    <section class="sldr">
+                        <article class="sldr-item-top">
+                            <div class="img-container">
+                                <a href="img/js_applications_-_july_2017_-_certificate.jpg" target="_blank">
+                                    <img src="img/js_applications_-_july_2017_-_certificate.jpg" alt="Certificate-javascript">
+                                </a>
+                            </div>
+                        </article>
+                    </section>
 
-                        <div class="slides">
-                            <a href="img/Diploma.jpg" target="_blank" data-slide="one"><img src="img/Diploma.jpg" data-slide="one"></a>
-                            <a href="img/js_applications_-_july_2017_-_certificate.jpg" target="_blank" data-slide="two"><img src="img/js_applications_-_july_2017_-_certificate.jpg" data-slide="two"></a>
-                            <a href="img/web_fundamentals_-_html5_-_january_2017_-_certific.jpg" target="_blank" data-slide="three"><img src="img/web_fundamentals_-_html5_-_january_2017_-_certific.jpg" data-slide="three"></a>
-
-                        </div>
-
-                        <div class="events">
-                            <label for="one" class="label">Diploma</label>
-                            <label for="two" class="label">JavaScript</label>
-                            <label for="three" class="label">HTML5</label>
-                        </div>
-                    </div>
+                    <section class="sldr-btn">
+                        <div class="btn" id="btn-js">JavaScript</div>
+                        <div class="btn" id="btn-html">HTML5</div>
+                        <div class="btn" id="btn-diploma">Diploma</div>
+                    </section>
                 </div>
             </div>
             <!-- End Right Column -->
@@ -545,6 +554,7 @@
     $(() => effects());
     $(() => formSubmit());
     $(() => contactFormDesign());
+    $(() => moveSlider());
 </script>
 
 </body>
