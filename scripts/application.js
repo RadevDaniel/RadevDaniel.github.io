@@ -53,8 +53,8 @@ function effects() {
                     $('.w3-progressbar:eq(0)').animate({'width': '95%'}, 1550);
                     executePercents(80, 'js');
                     $('.w3-progressbar:eq(1)').animate({'width': '80%'}, 1340);
-                    executePercents(60, 'node');
-                    $('.w3-progressbar:eq(2)').animate({'width': '60%'}, 1050);
+                    executePercents(65, 'node');
+                    $('.w3-progressbar:eq(2)').animate({'width': '65%'}, 1150);
                     executePercents(40, 'csh');
                     $('.w3-progressbar:eq(3)').animate({'width': '40%'}, 850);
                     executePercents(30, 'cpp');
